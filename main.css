@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-2xl print:hidden
+    }
+
+    form {
+        @apply print:hidden
+    }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    label,
+    input,
+    select {
+        @apply block
+    }
+
+    input, select, textarea, fieldset {
+        @apply m-1 border border-slate-200 shadow
+    }
+
+    .btn {
+        @apply font-bold py-2 px-4 rounded bg-slate-600 text-white
+    }
+
+    .btn:hover {
+        @apply bg-slate-400 text-black;
+    }
+
+    legend {
+        @apply font-bold p-1
+    }
+
+    div.clear {
+        @apply clear-both
+    }
+
+    table {
+        @apply m-10 float-left shadow
+    }
+
+    td,
+    th {
+        @apply text-center border-2 border-solid
+    }
+
+    th {
+        @apply text-3xl text-black bg-stone-200 p-2 m-2
+    }
+
+    td {
+        @apply w-20 h-20 text-2xl
+    }
+
+    .results {
+        @apply grid grid-cols-3 print:grid-cols-2
+    }
+
+    .freespace {
+        @apply text-sm
+    }
+
+    .daub {
+        @apply bg-no-repeat
+    }
+
+    .daubPos1 {
+        background-position: 8px 8px;
+    }
+
+    .daubPos2 {
+        background-position: 3px 8px;
+    }
+
+    .daubPos3 {
+        background-position: 8px 3px;
+    }
+
+    .daubPos4 {
+        background-position: 12px 8px;
+    }
+
+    .daubPos5 {
+        background-position: 8px 12px;
+    }
+
+    .daubImg1 {
+        background-image: url(images/daub1.png);
+    }
+
+    .daubImg2 {
+        background-image: url(images/daub2.png);
+    }
+
+    .daubImg3 {
+        background-image: url(images/daub3.png);
+    }
+
+    .daubImg4 {
+        background-image: url(images/daub4.png);
+    }
+
+    .daubImg5 {
+        background-image: url(images/daub5.png);
+    }
+
+}
